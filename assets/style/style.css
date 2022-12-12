@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.375rem; /* 22px */
@@ -5,4 +13,96 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: seashell;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 2em 0;
+}
+#our-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+}
+.text-wrapper {
+  background-color: black;
+}
+
+#featured-tea {
+  max-width: 1000px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.product-img {
+  width: 300px;
+  height: 200px;
+}
+
+#locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/img-locations-background.jpg");
+  width: 1200px;
+  height: 550px;
+}
+
+.address-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+address {
+  width: 300px;
+  background-color: black;
+  padding: 1em;
+}
+
+.footer-contact {
+  height: 200px;
+}
+
+.footer-copy {
+  text-align: left;
+  margin-left: 10px;
 }
